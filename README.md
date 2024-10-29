@@ -12,7 +12,7 @@ class. Then set the domain names you want to share the session cookie.
 MIDDLEWARE = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'xsessions.middleware.XSessionMiddleware',
+    'xsessions.middleware.XSessionMiddleware', # <------
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -25,7 +25,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'xsessions',
+    'xsessions', # <------
 )
 
 XSESSION_DOMAINS = ['www.domain1.com', 'www.domain2.com', 'www.domain3.com']
